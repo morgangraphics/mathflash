@@ -1,0 +1,359 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/reset";
+
+html {
+
+}
+
+body {
+    xpadding: 50px;
+    font: 14px Helvetica, Arial, sans-serif;
+}
+
+#step1 {
+    clear: both;
+    overflow: auto;
+    position: relative;
+    vertical-align: top;
+    input[type='text'] {
+        border: 1px solid #8c8c8c;
+        padding-left: 5px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        border-radius: 5px;
+        xwidth: 35%;
+        font-size: 40px;
+        margin-bottom: 10px;
+        outline: none;
+    }
+    div.icons {
+        height: 134px;
+        width: 134px;
+        overflow: hidden;
+        background-color: transparent;
+        display: inline-block;
+        position: relative;
+        vertical-align: top;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        border-radius: 10px;
+        border: 1px solid #fff;
+        ul.icons {
+            width: 5000px;
+            overflow: auto;
+            vertical-align: top;
+            position: relative;
+            li {
+                float: left;
+                border: 1px solid #fff;
+                height: 132px;
+                width: 132px;
+            }
+        }
+        &:hover, &:active, &.active {
+            border: 1px solid #8c8c8c;
+        }
+        &:hover > .controls {
+            margin-top: -40px;
+            -webkit-transition:margin-top 1s; /* For Safari 3.1 to 6.0 */
+            transition:margin-top 1s;
+
+        }
+
+        .controls {
+            margin-top: 0px;
+            position: relative;
+            border-top:1px solid #8c8c8c;
+            border-bottom:1px solid #8c8c8c;
+            background-color: rgba(163,163,162,.3);
+            
+
+            a {
+                display: inline-block;
+                font-size: 0.1em;
+                text-indent: -999em;
+                line-height: 20px;
+                width:50%;
+                padding:3px 0 3px 0;
+            }
+            
+            a.left:before, a.left:after, a.right:before, a.right:after {
+                content:'';
+                position: absolute;
+                border-style: solid;
+            }
+            /* Left Arrow */
+            a.left:before {
+                border-top-width: 10px;
+                border-right-width: 10px;
+                border-bottom-width: 10px;
+                border-color: transparent #00FF99 transparent transparent;
+                
+                xtop: 50%;
+                left: 10px;
+                z-index: 1;
+            }
+            a.left:after {
+                border-top-width: 8px;
+                border-right-width: 8px;
+                border-bottom-width: 8px;
+                border-color: transparent #009DFF transparent transparent;
+                
+                xtop: 49%;
+                left: 10px;
+                margin :2px 0px 0px 1px;
+                z-index: 2;
+            }
+            a.left:hover:before {
+                border-color: transparent #009DFF transparent transparent;
+            }
+            a.left:hover:after {
+                border-color: transparent #00FF99 transparent transparent;
+            }
+
+            a.left.disabled, a.left.disabled:before, a.left.disabled:hover:before {
+                border-color: transparent #C4C4C4 transparent transparent;
+                cursor:default;
+            }
+            a.left.disabled:after, a.left.disabled:hover:after {
+                border-color: transparent #999999 transparent transparent;
+                cursor:default;
+            }
+
+        
+            /* Right Arrow */
+            a.right:before {
+                border-top-width: 10px;
+                border-left-width: 10px;
+                border-bottom-width: 10px;
+                border-style: solid;
+                border-color: transparent transparent transparent #00FF99;
+                xtop: 50%;
+                right: 10px;
+                z-index: 1;
+            }
+            a.right:after {
+                border-top-width: 8px;
+                border-left-width: 8px;
+                border-bottom-width: 8px;
+                border-style: solid;
+                border-color: transparent transparent transparent #009DFF;
+                xtop: 50%;
+                margin :2px 1px 0px 0px;
+                right: 10px;
+                z-index: 2;
+            }
+            a.right:hover:before {
+                border-color: transparent transparent transparent #009DFF;
+            }
+            a.right:hover:after {
+                border-color: transparent transparent transparent #00FF99;
+            }
+            
+            a.right.disabled, a.right.disabled:before, a.right.disabled:hover:before {
+                border-color: transparent transparent transparent #C4C4C4;
+                cursor:default;
+            }
+            a.right.disabled:after, a.right.disabled:hover:after {
+                border-color: transparent transparent transparent #999999;
+                cursor:default;
+            }
+            
+        }
+    }
+    div.name {
+        height: 128px;
+        display: inline-block;
+        position: relative;
+        vertical-align: top;
+        margin-top:30px;
+    }
+    div.name:before, div.name:after {
+        content:'';
+        position: absolute;
+        border-style: solid;
+    }
+    /* Left Arrow */
+    div.name:before {
+        border-top-width: 10px;
+        border-right-width: 10px;
+        border-bottom-width: 10px;
+        border-color: transparent #454545 transparent transparent;
+        
+        top: 20px;
+        left: -11px;
+        z-index: 1;
+    }
+    div.name:after {
+        border-top-width: 10px;
+        border-right-width: 10px;
+        border-bottom-width: 10px;
+        border-color: transparent #fff transparent transparent;
+        
+        top: 20px;
+        left: -10px;
+        xmargin :1px 0px 0px 0px;
+        z-index: 2;
+    }
+}
+
+
+ul.games {
+    overflow: auto;
+    li {
+        width: 140px;
+        margin: 0px 0px 15px 15px;
+        float: left;
+        a {
+            font-size: 128px;
+            font-weight: bold;
+            color:#fff;
+            background-color: #8c8c8c;
+            
+            text-decoration: none;
+            height: 100%;
+            width: 100%;
+            border: 1px solid #8c8c8c;
+            -webkit-border-radius: 10px;
+            -moz-border-radius: 10px;
+            border-radius: 10px;
+            display:block;
+            text-align: center;
+        }
+        a:hover, a:active, a.active {
+            background-color: #fff;
+            color: #8c8c8c;
+        }
+    }
+    li:first-child {
+        margin-left: 0;
+    }
+}
+
+ul.games.disabled {
+    li {
+        a {
+            color:#999;
+        }
+    }
+}
+
+/*==================== STATUS CONTINER ====================*/
+#statusContainer {
+    position: fixed;
+    top:0;
+    height: 50px;
+    width: 100%;
+    background-color: rgba(163,163,162,.3);
+}
+#statusBar {
+    padding: 10px;
+}
+#roomName {
+    font-size: 36px;
+    display:inline-block;
+}
+
+#content { 
+    xfloat: left;
+    padding: 10px;
+}
+#question {
+    xborder: 1px solid black;
+    min-width: 300px;
+    height: 200px;
+    xfloat: left;
+    font-size: 128px;
+    display: table-cell;
+    text-align:right;
+    vertical-align: middle;
+    font-weight: bold;
+}
+#equals {
+    display: table-cell;
+    text-align:center;
+    vertical-align: middle;
+    font-size: 128px;
+    font-weight: bold;
+    padding: 0px 20px 0px 20px;
+}
+#answer {
+    width: 200px;
+    height: 200px;
+    display: table-cell;
+    text-align:center;
+    vertical-align: middle;
+    xfloat: left;
+    
+    input {
+        border: 1px solid #8c8c8c;
+        background: transparent;
+        -webkit-appearance: none;
+        height: 200px;
+        width: 200px;
+        font-size: 128px;
+        font-weight: bold;
+        padding-left: 10px;
+        outline: 0;
+    }
+
+    input[type=number]::-webkit-inner-spin-button,
+    input[type=number]::-webkit-outer-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+}
+#chatBlock {
+    margin-top:60px;
+}
+#chatContainer {
+    width: 100%;
+
+    #chat {
+        width: 79%;
+        height: 400px;
+        border-top: 1px solid #8c8c8c;
+        border-left: 1px solid #8c8c8c;
+        border-bottom: 1px solid #8c8c8c;
+        margin:0;
+        float:left;
+    }
+
+    #guests {
+        width: 20%;
+        height: 400px;
+        border: 1px solid #8c8c8c;
+        float:left;
+    }
+}
+
+#terminal {
+    clear: both;
+}
+
+
+
+
+
+#stats {
+    xwidth: 210px;
+    xheight: 300px;
+    display: inline-block;
+    border: 1px solid #8c8c8c;
+    xmargin-left: 10px;
+    float:right;
+}
+#sidebar { 
+    float: right; 
+
+    #games {
+        width: 210px;
+        height: 300px;
+        border: 1px solid #8c8c8c;
+    }
+    
+}

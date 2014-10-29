@@ -1,0 +1,17 @@
+{
+  "name": "math_flash",
+  "version": "0.0.1",
+  "description": "Math Flash Card Game",
+  "author": "dmorgan <dnmorgan@gmail.com>",
+  "dependencies": {
+    "handlebars": "2.0.x",
+    "socket.io": "0.9.x",
+    "mime": "1.2.x"
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "main": "server.js",
+  "devDependencies": {},
+  "license": "ISC"
+}

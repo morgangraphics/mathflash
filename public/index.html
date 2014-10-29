@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>Math Flash</title>
+        <link rel="stylesheet" href="css/stylesheets/screen.css"></link>
+    </head>
+    <body>
+        <div id="step1" >
+            <h2>Welcome to MathFlash! Enter your name and select a game.</h2>
+            <div class="icons">
+                <ul class="icons">
+                    <li class="active"><img src="img/monster-1-icon.png" /></li>
+                    <li><img src="img/monster-2-icon.png" /></li>
+                    <li><img src="img/monster-3-icon.png" /></li>
+                    <li><img src="img/monster-4-icon.png" /></li>
+                    <li><img src="img/Orange-icon.png" /></li>
+                    <li><img src="img/Purple-icon.png" /></li>
+                    <li><img src="img/Red-icon.png" /></li>
+                    <li><img src="img/Yellow-icon.png" /></li>
+                </ul>
+                <div class="controls"><a href="#back" class="left disabled">back</a><a href="#next" class="right">next</a></div>
+            </div>
+            <div class="name"><input type="text" id="name" placeholder="What is your name?" required /></div>
+            <ul class="games disabled">
+                <li><a href="#addition">&#43;</a></li>
+                <li><a href="#subtraction">&#8722;</a></li>
+                <li><a href="#multiplication">&times;</a></li>
+                <li><a href="#division">&divide;</a></li>
+            </ul>
+        </div>
+        <div id="step2" style="display:none;">
+            <div id="statusContainer">
+                <div id="statusBG"></div>
+                <div id="statusBar">
+                    <div id="avatar" class="avatar"></div>
+                    <div id="roomName"></div>
+                    <div id="stats">Stats</div>
+                </div>
+            </div>
+
+            <div id="content">
+                <div id="chatBlock">
+                    <div id="chatContainer">
+                        <div id="chat"></div>
+                        <div id="guests"></div>
+                    </div>
+                    <div id="terminal">
+                        <form id="game-controls">
+                            <input id='send-message' />
+                            <input id='send-button' type='submit' value='Send'/>
+                        </form>
+                    </div>
+                </div>
+
+
+                <div id="questionContainer" style="display:none;">
+                    <div id="question">4 + 4</div>
+                    <div id="equals">=</div>
+                    <div id="answer">
+                        <form id="answer-form">
+                           <input type="number" name="answer" />
+                        </form>
+                    </div>
+                </div>
+
+                
+            
+
+                <div id="game-room"></div>
+                
+                
+                
+                <div id="overlay">3...2...1...Go!</div>
+                <a href="#new-game">New Game</a>
+            </div>
+            <div id="sidebar" style="xdisplay:none;">
+                <div id="games"></div>
+                
+            </div>
+        </div>
+        
+    </body>
+    <script src='socket.io/socket.io.js' type='text/javascript'></script>
+    <script src='http://code.jquery.com/jquery-1.8.0.min.js' type='text/javascript'></script>
+    <script src='scripts/math_app.js' type='text/javascript'></script>
+    <script src='scripts/math_ui.js' type='text/javascript'></script>
+</html>

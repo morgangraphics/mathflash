@@ -1,0 +1,9 @@
+(function() {
+  var template = Handlebars.template, templates = Handlebars.templates = Handlebars.templates || {};
+templates['avatar.html'] = template({"compiler":[6,">= 2.0.0-beta.1"],"main":function(depth0,helpers,partials,data) {
+  return "<div class=\"icons\">\n    <ul class=\"icons\">\n        <li class=\"active\"><img src=\"img/monster-1-icon.png\" /></li>\n        <li><img src=\"img/monster-2-icon.png\" /></li>\n        <li><img src=\"img/monster-3-icon.png\" /></li>\n        <li><img src=\"img/monster-4-icon.png\" /></li>\n        <li><img src=\"img/Orange-icon.png\" /></li>\n        <li><img src=\"img/Purple-icon.png\" /></li>\n        <li><img src=\"img/Red-icon.png\" /></li>\n        <li><img src=\"img/Yellow-icon.png\" /></li>\n    </ul>\n    <div class=\"controls\"><a href=\"#back\" class=\"left disabled\">back</a><a href=\"#next\" class=\"right\">next</a></div>\n</div>";
+  },"useData":true});
+templates['avatar.tmpl'] = template({"compiler":[6,">= 2.0.0-beta.1"],"main":function(depth0,helpers,partials,data) {
+  return "<div class=\"icons\">\n    <ul class=\"icons\">\n        <li class=\"active\"><img src=\"img/monster-1-icon.png\" /></li>\n        <li><img src=\"img/monster-2-icon.png\" /></li>\n        <li><img src=\"img/monster-3-icon.png\" /></li>\n        <li><img src=\"img/monster-4-icon.png\" /></li>\n        <li><img src=\"img/Orange-icon.png\" /></li>\n        <li><img src=\"img/Purple-icon.png\" /></li>\n        <li><img src=\"img/Red-icon.png\" /></li>\n        <li><img src=\"img/Yellow-icon.png\" /></li>\n    </ul>\n    <div class=\"controls\"><a href=\"#back\" class=\"left disabled\">back</a><a href=\"#next\" class=\"right\">next</a></div>\n</div>";
+  },"useData":true});
+})();

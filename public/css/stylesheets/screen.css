@@ -1,0 +1,446 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 5, ../../../../../../../var/lib/gems/1.9.1/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../../../var/lib/gems/1.9.1/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../../../var/lib/gems/1.9.1/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../../../var/lib/gems/1.9.1/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../../../var/lib/gems/1.9.1/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../../../var/lib/gems/1.9.1/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../../../var/lib/gems/1.9.1/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../../../var/lib/gems/1.9.1/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../../../var/lib/gems/1.9.1/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 12, ../sass/screen.scss */
+body {
+  xpadding: 50px;
+  font: 14px Helvetica, Arial, sans-serif;
+}
+
+/* line 17, ../sass/screen.scss */
+#step1 {
+  clear: both;
+  overflow: auto;
+  position: relative;
+  vertical-align: top;
+  /* Left Arrow */
+}
+/* line 22, ../sass/screen.scss */
+#step1 input[type='text'] {
+  border: 1px solid #8c8c8c;
+  padding-left: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  xwidth: 35%;
+  font-size: 40px;
+  margin-bottom: 10px;
+  outline: none;
+}
+/* line 33, ../sass/screen.scss */
+#step1 div.icons {
+  height: 134px;
+  width: 134px;
+  overflow: hidden;
+  background-color: transparent;
+  display: inline-block;
+  position: relative;
+  vertical-align: top;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  border: 1px solid #fff;
+}
+/* line 45, ../sass/screen.scss */
+#step1 div.icons ul.icons {
+  width: 5000px;
+  overflow: auto;
+  vertical-align: top;
+  position: relative;
+}
+/* line 50, ../sass/screen.scss */
+#step1 div.icons ul.icons li {
+  float: left;
+  border: 1px solid #fff;
+  height: 132px;
+  width: 132px;
+}
+/* line 57, ../sass/screen.scss */
+#step1 div.icons:hover, #step1 div.icons:active, #step1 div.icons.active {
+  border: 1px solid #8c8c8c;
+}
+/* line 60, ../sass/screen.scss */
+#step1 div.icons:hover > .controls {
+  margin-top: -40px;
+  -webkit-transition: margin-top 1s;
+  /* For Safari 3.1 to 6.0 */
+  transition: margin-top 1s;
+}
+/* line 67, ../sass/screen.scss */
+#step1 div.icons .controls {
+  margin-top: 0px;
+  position: relative;
+  border-top: 1px solid #8c8c8c;
+  border-bottom: 1px solid #8c8c8c;
+  background-color: rgba(163, 163, 162, 0.3);
+  /* Left Arrow */
+  /* Right Arrow */
+}
+/* line 75, ../sass/screen.scss */
+#step1 div.icons .controls a {
+  display: inline-block;
+  font-size: 0.1em;
+  text-indent: -999em;
+  line-height: 20px;
+  width: 50%;
+  padding: 3px 0 3px 0;
+}
+/* line 84, ../sass/screen.scss */
+#step1 div.icons .controls a.left:before, #step1 div.icons .controls a.left:after, #step1 div.icons .controls a.right:before, #step1 div.icons .controls a.right:after {
+  content: '';
+  position: absolute;
+  border-style: solid;
+}
+/* line 90, ../sass/screen.scss */
+#step1 div.icons .controls a.left:before {
+  border-top-width: 10px;
+  border-right-width: 10px;
+  border-bottom-width: 10px;
+  border-color: transparent #00FF99 transparent transparent;
+  xtop: 50%;
+  left: 10px;
+  z-index: 1;
+}
+/* line 100, ../sass/screen.scss */
+#step1 div.icons .controls a.left:after {
+  border-top-width: 8px;
+  border-right-width: 8px;
+  border-bottom-width: 8px;
+  border-color: transparent #009DFF transparent transparent;
+  xtop: 49%;
+  left: 10px;
+  margin: 2px 0px 0px 1px;
+  z-index: 2;
+}
+/* line 111, ../sass/screen.scss */
+#step1 div.icons .controls a.left:hover:before {
+  border-color: transparent #009DFF transparent transparent;
+}
+/* line 114, ../sass/screen.scss */
+#step1 div.icons .controls a.left:hover:after {
+  border-color: transparent #00FF99 transparent transparent;
+}
+/* line 118, ../sass/screen.scss */
+#step1 div.icons .controls a.left.disabled, #step1 div.icons .controls a.left.disabled:before, #step1 div.icons .controls a.left.disabled:hover:before {
+  border-color: transparent #C4C4C4 transparent transparent;
+  cursor: default;
+}
+/* line 122, ../sass/screen.scss */
+#step1 div.icons .controls a.left.disabled:after, #step1 div.icons .controls a.left.disabled:hover:after {
+  border-color: transparent #999999 transparent transparent;
+  cursor: default;
+}
+/* line 129, ../sass/screen.scss */
+#step1 div.icons .controls a.right:before {
+  border-top-width: 10px;
+  border-left-width: 10px;
+  border-bottom-width: 10px;
+  border-style: solid;
+  border-color: transparent transparent transparent #00FF99;
+  xtop: 50%;
+  right: 10px;
+  z-index: 1;
+}
+/* line 139, ../sass/screen.scss */
+#step1 div.icons .controls a.right:after {
+  border-top-width: 8px;
+  border-left-width: 8px;
+  border-bottom-width: 8px;
+  border-style: solid;
+  border-color: transparent transparent transparent #009DFF;
+  xtop: 50%;
+  margin: 2px 1px 0px 0px;
+  right: 10px;
+  z-index: 2;
+}
+/* line 150, ../sass/screen.scss */
+#step1 div.icons .controls a.right:hover:before {
+  border-color: transparent transparent transparent #009DFF;
+}
+/* line 153, ../sass/screen.scss */
+#step1 div.icons .controls a.right:hover:after {
+  border-color: transparent transparent transparent #00FF99;
+}
+/* line 157, ../sass/screen.scss */
+#step1 div.icons .controls a.right.disabled, #step1 div.icons .controls a.right.disabled:before, #step1 div.icons .controls a.right.disabled:hover:before {
+  border-color: transparent transparent transparent #C4C4C4;
+  cursor: default;
+}
+/* line 161, ../sass/screen.scss */
+#step1 div.icons .controls a.right.disabled:after, #step1 div.icons .controls a.right.disabled:hover:after {
+  border-color: transparent transparent transparent #999999;
+  cursor: default;
+}
+/* line 168, ../sass/screen.scss */
+#step1 div.name {
+  height: 128px;
+  display: inline-block;
+  position: relative;
+  vertical-align: top;
+  margin-top: 30px;
+}
+/* line 175, ../sass/screen.scss */
+#step1 div.name:before, #step1 div.name:after {
+  content: '';
+  position: absolute;
+  border-style: solid;
+}
+/* line 181, ../sass/screen.scss */
+#step1 div.name:before {
+  border-top-width: 10px;
+  border-right-width: 10px;
+  border-bottom-width: 10px;
+  border-color: transparent #454545 transparent transparent;
+  top: 20px;
+  left: -11px;
+  z-index: 1;
+}
+/* line 191, ../sass/screen.scss */
+#step1 div.name:after {
+  border-top-width: 10px;
+  border-right-width: 10px;
+  border-bottom-width: 10px;
+  border-color: transparent #fff transparent transparent;
+  top: 20px;
+  left: -10px;
+  xmargin: 1px 0px 0px 0px;
+  z-index: 2;
+}
+
+/* line 205, ../sass/screen.scss */
+ul.games {
+  overflow: auto;
+}
+/* line 207, ../sass/screen.scss */
+ul.games li {
+  width: 140px;
+  margin: 0px 0px 15px 15px;
+  float: left;
+}
+/* line 211, ../sass/screen.scss */
+ul.games li a {
+  font-size: 128px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #8c8c8c;
+  text-decoration: none;
+  height: 100%;
+  width: 100%;
+  border: 1px solid #8c8c8c;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  display: block;
+  text-align: center;
+}
+/* line 227, ../sass/screen.scss */
+ul.games li a:hover, ul.games li a:active, ul.games li a.active {
+  background-color: #fff;
+  color: #8c8c8c;
+}
+/* line 232, ../sass/screen.scss */
+ul.games li:first-child {
+  margin-left: 0;
+}
+
+/* line 239, ../sass/screen.scss */
+ul.games.disabled li a {
+  color: #999;
+}
+
+/*==================== STATUS CONTINER ====================*/
+/* line 246, ../sass/screen.scss */
+#statusContainer {
+  position: fixed;
+  top: 0;
+  height: 50px;
+  width: 100%;
+  background-color: rgba(163, 163, 162, 0.3);
+}
+
+/* line 253, ../sass/screen.scss */
+#statusBar {
+  padding: 10px;
+}
+
+/* line 256, ../sass/screen.scss */
+#roomName {
+  font-size: 36px;
+  display: inline-block;
+}
+
+/* line 261, ../sass/screen.scss */
+#content {
+  xfloat: left;
+  padding: 10px;
+}
+
+/* line 265, ../sass/screen.scss */
+#question {
+  xborder: 1px solid black;
+  min-width: 300px;
+  height: 200px;
+  xfloat: left;
+  font-size: 128px;
+  display: table-cell;
+  text-align: right;
+  vertical-align: middle;
+  font-weight: bold;
+}
+
+/* line 276, ../sass/screen.scss */
+#equals {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 128px;
+  font-weight: bold;
+  padding: 0px 20px 0px 20px;
+}
+
+/* line 284, ../sass/screen.scss */
+#answer {
+  width: 200px;
+  height: 200px;
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+  xfloat: left;
+}
+/* line 292, ../sass/screen.scss */
+#answer input {
+  border: 1px solid #8c8c8c;
+  background: transparent;
+  -webkit-appearance: none;
+  height: 200px;
+  width: 200px;
+  font-size: 128px;
+  font-weight: bold;
+  padding-left: 10px;
+  outline: 0;
+}
+/* line 304, ../sass/screen.scss */
+#answer input[type=number]::-webkit-inner-spin-button,
+#answer input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* line 310, ../sass/screen.scss */
+#chatBlock {
+  margin-top: 60px;
+}
+
+/* line 313, ../sass/screen.scss */
+#chatContainer {
+  width: 100%;
+}
+/* line 316, ../sass/screen.scss */
+#chatContainer #chat {
+  width: 79%;
+  height: 400px;
+  border-top: 1px solid #8c8c8c;
+  border-left: 1px solid #8c8c8c;
+  border-bottom: 1px solid #8c8c8c;
+  margin: 0;
+  float: left;
+}
+/* line 326, ../sass/screen.scss */
+#chatContainer #guests {
+  width: 20%;
+  height: 400px;
+  border: 1px solid #8c8c8c;
+  float: left;
+}
+
+/* line 334, ../sass/screen.scss */
+#terminal {
+  clear: both;
+}
+
+/* line 342, ../sass/screen.scss */
+#stats {
+  xwidth: 210px;
+  xheight: 300px;
+  display: inline-block;
+  border: 1px solid #8c8c8c;
+  xmargin-left: 10px;
+  float: right;
+}
+
+/* line 350, ../sass/screen.scss */
+#sidebar {
+  float: right;
+}
+/* line 353, ../sass/screen.scss */
+#sidebar #games {
+  width: 210px;
+  height: 300px;
+  border: 1px solid #8c8c8c;
+}
