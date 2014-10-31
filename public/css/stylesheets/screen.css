@@ -327,21 +327,33 @@ ul.games.disabled li a {
 /* line 253, ../sass/screen.scss */
 #statusBar {
   padding: 10px;
+  overflow: auto;
 }
 
-/* line 256, ../sass/screen.scss */
+/* line 257, ../sass/screen.scss */
+#avatar {
+  float: left;
+  margin-top: -15px;
+}
+/* line 260, ../sass/screen.scss */
+#avatar img {
+  height: 50%;
+  width: 50%;
+}
+
+/* line 266, ../sass/screen.scss */
 #roomName {
   font-size: 36px;
-  display: inline-block;
+  float: left;
 }
 
-/* line 261, ../sass/screen.scss */
+/* line 271, ../sass/screen.scss */
 #content {
   xfloat: left;
   padding: 10px;
 }
 
-/* line 265, ../sass/screen.scss */
+/* line 275, ../sass/screen.scss */
 #question {
   xborder: 1px solid black;
   min-width: 300px;
@@ -354,7 +366,7 @@ ul.games.disabled li a {
   font-weight: bold;
 }
 
-/* line 276, ../sass/screen.scss */
+/* line 286, ../sass/screen.scss */
 #equals {
   display: table-cell;
   text-align: center;
@@ -364,7 +376,7 @@ ul.games.disabled li a {
   padding: 0px 20px 0px 20px;
 }
 
-/* line 284, ../sass/screen.scss */
+/* line 294, ../sass/screen.scss */
 #answer {
   width: 200px;
   height: 200px;
@@ -373,7 +385,7 @@ ul.games.disabled li a {
   vertical-align: middle;
   xfloat: left;
 }
-/* line 292, ../sass/screen.scss */
+/* line 302, ../sass/screen.scss */
 #answer input {
   border: 1px solid #8c8c8c;
   background: transparent;
@@ -385,23 +397,23 @@ ul.games.disabled li a {
   padding-left: 10px;
   outline: 0;
 }
-/* line 304, ../sass/screen.scss */
+/* line 314, ../sass/screen.scss */
 #answer input[type=number]::-webkit-inner-spin-button,
 #answer input[type=number]::-webkit-outer-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
 
-/* line 310, ../sass/screen.scss */
+/* line 320, ../sass/screen.scss */
 #chatBlock {
   margin-top: 60px;
 }
 
-/* line 313, ../sass/screen.scss */
+/* line 323, ../sass/screen.scss */
 #chatContainer {
   width: 100%;
 }
-/* line 316, ../sass/screen.scss */
+/* line 326, ../sass/screen.scss */
 #chatContainer #chat {
   width: 79%;
   height: 400px;
@@ -411,7 +423,7 @@ ul.games.disabled li a {
   margin: 0;
   float: left;
 }
-/* line 326, ../sass/screen.scss */
+/* line 336, ../sass/screen.scss */
 #chatContainer #guests {
   width: 20%;
   height: 400px;
@@ -419,12 +431,12 @@ ul.games.disabled li a {
   float: left;
 }
 
-/* line 334, ../sass/screen.scss */
+/* line 344, ../sass/screen.scss */
 #terminal {
   clear: both;
 }
 
-/* line 342, ../sass/screen.scss */
+/* line 352, ../sass/screen.scss */
 #stats {
   xwidth: 210px;
   xheight: 300px;
@@ -434,11 +446,11 @@ ul.games.disabled li a {
   float: right;
 }
 
-/* line 350, ../sass/screen.scss */
+/* line 360, ../sass/screen.scss */
 #sidebar {
   float: right;
 }
-/* line 353, ../sass/screen.scss */
+/* line 363, ../sass/screen.scss */
 #sidebar #games {
   width: 210px;
   height: 300px;

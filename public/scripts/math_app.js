@@ -38,13 +38,21 @@ var Chat = (function(socket) {
     }
     function handleAction(obj){
         var action = obj.action;
+        delete obj.action;
         switch (action) {
-            case 'name' :
-                changeName(obj.name);
+            case 'disconnect':
+                disconnect();
             break;
             case 'join' :
                 changeGame(obj.game);
-                break;
+            break;
+            case 'name' :
+                changeName(obj.name);
+            break;
+            case 'profile' :
+                console.log('updating profile...')
+                updateProfile(obj);
+            break;
             default:
                 break;
         }
@@ -55,6 +63,9 @@ var Chat = (function(socket) {
             text: obj.message
         }
         socket.emit('message', message);
+    }
+    function updateProfile(obj){
+        socket.emit('updateProfile', obj);
     }
     return {
         //changeGame: changeGame,
