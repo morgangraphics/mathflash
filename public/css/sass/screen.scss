@@ -252,10 +252,20 @@ ul.games.disabled {
 }
 #statusBar {
     padding: 10px;
+    overflow: auto;
+}
+#avatar {
+    float: left;
+    margin-top: -15px;
+    img {
+        height:50%;
+        width:50%;
+        
+    }
 }
 #roomName {
     font-size: 36px;
-    display:inline-block;
+    float:left;
 }
 
 #content { 
