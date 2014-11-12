@@ -79,9 +79,12 @@ body {
   overflow: auto;
   position: relative;
   vertical-align: top;
+  width: 700px;
+  text-align: center;
+  margin: 40px auto;
   /* Left Arrow */
 }
-/* line 22, ../sass/screen.scss */
+/* line 25, ../sass/screen.scss */
 #step1 input[type='text'] {
   border: 1px solid #8c8c8c;
   padding-left: 5px;
@@ -93,7 +96,7 @@ body {
   margin-bottom: 10px;
   outline: none;
 }
-/* line 33, ../sass/screen.scss */
+/* line 36, ../sass/screen.scss */
 #step1 div.icons {
   height: 134px;
   width: 134px;
@@ -107,32 +110,32 @@ body {
   border-radius: 10px;
   border: 1px solid #fff;
 }
-/* line 45, ../sass/screen.scss */
+/* line 48, ../sass/screen.scss */
 #step1 div.icons ul.icons {
   width: 5000px;
   overflow: auto;
   vertical-align: top;
   position: relative;
 }
-/* line 50, ../sass/screen.scss */
+/* line 53, ../sass/screen.scss */
 #step1 div.icons ul.icons li {
   float: left;
   border: 1px solid #fff;
   height: 132px;
   width: 132px;
 }
-/* line 57, ../sass/screen.scss */
+/* line 60, ../sass/screen.scss */
 #step1 div.icons:hover, #step1 div.icons:active, #step1 div.icons.active {
   border: 1px solid #8c8c8c;
 }
-/* line 60, ../sass/screen.scss */
+/* line 63, ../sass/screen.scss */
 #step1 div.icons:hover > .controls {
   margin-top: -40px;
   -webkit-transition: margin-top 1s;
   /* For Safari 3.1 to 6.0 */
   transition: margin-top 1s;
 }
-/* line 67, ../sass/screen.scss */
+/* line 70, ../sass/screen.scss */
 #step1 div.icons .controls {
   margin-top: 0px;
   position: relative;
@@ -142,7 +145,7 @@ body {
   /* Left Arrow */
   /* Right Arrow */
 }
-/* line 75, ../sass/screen.scss */
+/* line 78, ../sass/screen.scss */
 #step1 div.icons .controls a {
   display: inline-block;
   font-size: 0.1em;
@@ -151,13 +154,13 @@ body {
   width: 50%;
   padding: 3px 0 3px 0;
 }
-/* line 84, ../sass/screen.scss */
+/* line 87, ../sass/screen.scss */
 #step1 div.icons .controls a.left:before, #step1 div.icons .controls a.left:after, #step1 div.icons .controls a.right:before, #step1 div.icons .controls a.right:after {
   content: '';
   position: absolute;
   border-style: solid;
 }
-/* line 90, ../sass/screen.scss */
+/* line 93, ../sass/screen.scss */
 #step1 div.icons .controls a.left:before {
   border-top-width: 10px;
   border-right-width: 10px;
@@ -167,7 +170,7 @@ body {
   left: 10px;
   z-index: 1;
 }
-/* line 100, ../sass/screen.scss */
+/* line 103, ../sass/screen.scss */
 #step1 div.icons .controls a.left:after {
   border-top-width: 8px;
   border-right-width: 8px;
@@ -178,25 +181,25 @@ body {
   margin: 2px 0px 0px 1px;
   z-index: 2;
 }
-/* line 111, ../sass/screen.scss */
+/* line 114, ../sass/screen.scss */
 #step1 div.icons .controls a.left:hover:before {
   border-color: transparent #009DFF transparent transparent;
 }
-/* line 114, ../sass/screen.scss */
+/* line 117, ../sass/screen.scss */
 #step1 div.icons .controls a.left:hover:after {
   border-color: transparent #00FF99 transparent transparent;
 }
-/* line 118, ../sass/screen.scss */
+/* line 121, ../sass/screen.scss */
 #step1 div.icons .controls a.left.disabled, #step1 div.icons .controls a.left.disabled:before, #step1 div.icons .controls a.left.disabled:hover:before {
   border-color: transparent #C4C4C4 transparent transparent;
   cursor: default;
 }
-/* line 122, ../sass/screen.scss */
+/* line 125, ../sass/screen.scss */
 #step1 div.icons .controls a.left.disabled:after, #step1 div.icons .controls a.left.disabled:hover:after {
   border-color: transparent #999999 transparent transparent;
   cursor: default;
 }
-/* line 129, ../sass/screen.scss */
+/* line 132, ../sass/screen.scss */
 #step1 div.icons .controls a.right:before {
   border-top-width: 10px;
   border-left-width: 10px;
@@ -207,7 +210,7 @@ body {
   right: 10px;
   z-index: 1;
 }
-/* line 139, ../sass/screen.scss */
+/* line 142, ../sass/screen.scss */
 #step1 div.icons .controls a.right:after {
   border-top-width: 8px;
   border-left-width: 8px;
@@ -219,25 +222,25 @@ body {
   right: 10px;
   z-index: 2;
 }
-/* line 150, ../sass/screen.scss */
+/* line 153, ../sass/screen.scss */
 #step1 div.icons .controls a.right:hover:before {
   border-color: transparent transparent transparent #009DFF;
 }
-/* line 153, ../sass/screen.scss */
+/* line 156, ../sass/screen.scss */
 #step1 div.icons .controls a.right:hover:after {
   border-color: transparent transparent transparent #00FF99;
 }
-/* line 157, ../sass/screen.scss */
+/* line 160, ../sass/screen.scss */
 #step1 div.icons .controls a.right.disabled, #step1 div.icons .controls a.right.disabled:before, #step1 div.icons .controls a.right.disabled:hover:before {
   border-color: transparent transparent transparent #C4C4C4;
   cursor: default;
 }
-/* line 161, ../sass/screen.scss */
+/* line 164, ../sass/screen.scss */
 #step1 div.icons .controls a.right.disabled:after, #step1 div.icons .controls a.right.disabled:hover:after {
   border-color: transparent transparent transparent #999999;
   cursor: default;
 }
-/* line 168, ../sass/screen.scss */
+/* line 171, ../sass/screen.scss */
 #step1 div.name {
   height: 128px;
   display: inline-block;
@@ -245,13 +248,13 @@ body {
   vertical-align: top;
   margin-top: 30px;
 }
-/* line 175, ../sass/screen.scss */
+/* line 178, ../sass/screen.scss */
 #step1 div.name:before, #step1 div.name:after {
   content: '';
   position: absolute;
   border-style: solid;
 }
-/* line 181, ../sass/screen.scss */
+/* line 184, ../sass/screen.scss */
 #step1 div.name:before {
   border-top-width: 10px;
   border-right-width: 10px;
@@ -261,7 +264,7 @@ body {
   left: -11px;
   z-index: 1;
 }
-/* line 191, ../sass/screen.scss */
+/* line 194, ../sass/screen.scss */
 #step1 div.name:after {
   border-top-width: 10px;
   border-right-width: 10px;
@@ -273,17 +276,18 @@ body {
   z-index: 2;
 }
 
-/* line 205, ../sass/screen.scss */
+/* line 208, ../sass/screen.scss */
 ul.games {
   overflow: auto;
+  margin-left: 60px;
 }
-/* line 207, ../sass/screen.scss */
+/* line 211, ../sass/screen.scss */
 ul.games li {
   width: 140px;
   margin: 0px 0px 15px 15px;
   float: left;
 }
-/* line 211, ../sass/screen.scss */
+/* line 215, ../sass/screen.scss */
 ul.games li a {
   font-size: 128px;
   font-weight: bold;
@@ -299,23 +303,23 @@ ul.games li a {
   display: block;
   text-align: center;
 }
-/* line 227, ../sass/screen.scss */
+/* line 231, ../sass/screen.scss */
 ul.games li a:hover, ul.games li a:active, ul.games li a.active {
   background-color: #fff;
   color: #8c8c8c;
 }
-/* line 232, ../sass/screen.scss */
+/* line 236, ../sass/screen.scss */
 ul.games li:first-child {
   margin-left: 0;
 }
 
-/* line 239, ../sass/screen.scss */
+/* line 243, ../sass/screen.scss */
 ul.games.disabled li a {
   color: #999;
 }
 
 /*==================== STATUS CONTINER ====================*/
-/* line 246, ../sass/screen.scss */
+/* line 250, ../sass/screen.scss */
 #statusContainer {
   position: fixed;
   top: 0;
@@ -324,36 +328,77 @@ ul.games.disabled li a {
   background-color: rgba(163, 163, 162, 0.3);
 }
 
-/* line 253, ../sass/screen.scss */
+/* line 257, ../sass/screen.scss */
 #statusBar {
   padding: 10px;
   overflow: auto;
 }
 
-/* line 257, ../sass/screen.scss */
+/* line 261, ../sass/screen.scss */
 #avatar {
   float: left;
-  margin-top: -15px;
+  margin-top: -10px;
 }
-/* line 260, ../sass/screen.scss */
+/* line 264, ../sass/screen.scss */
 #avatar img {
   height: 50%;
   width: 50%;
 }
 
-/* line 266, ../sass/screen.scss */
+/* line 270, ../sass/screen.scss */
 #roomName {
   font-size: 36px;
   float: left;
 }
 
-/* line 271, ../sass/screen.scss */
+/* line 274, ../sass/screen.scss */
+#timer {
+  float: left;
+  margin: 10px 0px 0px 30px;
+}
+/* line 278, ../sass/screen.scss */
+#timer span {
+  float: left;
+}
+/* line 281, ../sass/screen.scss */
+#timer #time {
+  padding-left: 10px;
+}
+/* line 284, ../sass/screen.scss */
+#timer .min, #timer .sec {
+  -webkit-animation-name: flash;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-iteration-count: 3;
+}
+/* line 289, ../sass/screen.scss */
+#timer .sec {
+  color: #f00;
+}
+
+@-webkit-keyframes flash {
+  0% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+/* line 302, ../sass/screen.scss */
 #content {
   xfloat: left;
   padding: 10px;
 }
 
-/* line 275, ../sass/screen.scss */
+/* line 306, ../sass/screen.scss */
 #question {
   xborder: 1px solid black;
   min-width: 300px;
@@ -366,7 +411,7 @@ ul.games.disabled li a {
   font-weight: bold;
 }
 
-/* line 286, ../sass/screen.scss */
+/* line 317, ../sass/screen.scss */
 #equals {
   display: table-cell;
   text-align: center;
@@ -376,7 +421,7 @@ ul.games.disabled li a {
   padding: 0px 20px 0px 20px;
 }
 
-/* line 294, ../sass/screen.scss */
+/* line 325, ../sass/screen.scss */
 #answer {
   width: 200px;
   height: 200px;
@@ -385,7 +430,7 @@ ul.games.disabled li a {
   vertical-align: middle;
   xfloat: left;
 }
-/* line 302, ../sass/screen.scss */
+/* line 333, ../sass/screen.scss */
 #answer input {
   border: 1px solid #8c8c8c;
   background: transparent;
@@ -397,23 +442,23 @@ ul.games.disabled li a {
   padding-left: 10px;
   outline: 0;
 }
-/* line 314, ../sass/screen.scss */
+/* line 345, ../sass/screen.scss */
 #answer input[type=number]::-webkit-inner-spin-button,
 #answer input[type=number]::-webkit-outer-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
 
-/* line 320, ../sass/screen.scss */
+/* line 351, ../sass/screen.scss */
 #chatBlock {
   margin-top: 60px;
 }
 
-/* line 323, ../sass/screen.scss */
+/* line 354, ../sass/screen.scss */
 #chatContainer {
   width: 100%;
 }
-/* line 326, ../sass/screen.scss */
+/* line 357, ../sass/screen.scss */
 #chatContainer #chat {
   width: 79%;
   height: 400px;
@@ -422,8 +467,9 @@ ul.games.disabled li a {
   border-bottom: 1px solid #8c8c8c;
   margin: 0;
   float: left;
+  word-wrap: break-word;
 }
-/* line 336, ../sass/screen.scss */
+/* line 368, ../sass/screen.scss */
 #chatContainer #guests {
   width: 20%;
   height: 400px;
@@ -431,12 +477,12 @@ ul.games.disabled li a {
   float: left;
 }
 
-/* line 344, ../sass/screen.scss */
+/* line 376, ../sass/screen.scss */
 #terminal {
   clear: both;
 }
 
-/* line 352, ../sass/screen.scss */
+/* line 384, ../sass/screen.scss */
 #stats {
   xwidth: 210px;
   xheight: 300px;
@@ -446,11 +492,11 @@ ul.games.disabled li a {
   float: right;
 }
 
-/* line 360, ../sass/screen.scss */
+/* line 392, ../sass/screen.scss */
 #sidebar {
   float: right;
 }
-/* line 363, ../sass/screen.scss */
+/* line 395, ../sass/screen.scss */
 #sidebar #games {
   width: 210px;
   height: 300px;

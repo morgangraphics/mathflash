@@ -6,8 +6,12 @@
         <link rel="stylesheet" href="css/stylesheets/screen.css"></link>
     </head>
     <body>
-        <div id="step1" >
-            <h2>Welcome to MathFlash! Enter your name and select a game.</h2>
+        <div id="step0" style="display:none;">
+            Instructions.
+
+            There are 3 rounds of 5 questions each.
+        </div>
+        <div id="step1" style="xdisplay:none;">
             <div class="icons">
                 <ul class="icons">
                     <li class="active"><img src="img/monster-1-icon.png" /></li>
@@ -35,6 +39,10 @@
                 <div id="statusBar">
                     <div id="avatar" class="avatar"></div>
                     <div id="roomName"></div>
+                    <div id="timer">
+                        <span id="ng">Next game starts in </span>
+                        <span id="time"></span>
+                    </div>
                     <div id="stats">Stats</div>
                 </div>
             </div>

@@ -19,6 +19,9 @@ body {
     overflow: auto;
     position: relative;
     vertical-align: top;
+    width: 700px;
+    text-align:center;
+    margin: 40px auto;
     input[type='text'] {
         border: 1px solid #8c8c8c;
         padding-left: 5px;
@@ -204,6 +207,7 @@ body {
 
 ul.games {
     overflow: auto;
+    margin-left:60px;
     li {
         width: 140px;
         margin: 0px 0px 15px 15px;
@@ -256,7 +260,7 @@ ul.games.disabled {
 }
 #avatar {
     float: left;
-    margin-top: -15px;
+    margin-top: -10px;
     img {
         height:50%;
         width:50%;
@@ -266,6 +270,33 @@ ul.games.disabled {
 #roomName {
     font-size: 36px;
     float:left;
+}
+#timer {
+    float: left;
+    margin: 10px 0px 0px 30px;
+
+    span {
+        float:left;
+    }
+    #time {
+        padding-left:10px;
+    }
+    .min, .sec {
+        -webkit-animation-name: flash;
+        -webkit-animation-duration: 1s;
+        -webkit-animation-iteration-count: 3;
+    }
+    .sec {
+        color: #f00;
+    }
+}
+
+@-webkit-keyframes flash {
+    0% { opacity:1; }
+    25% { opacity:0.5; }
+    50% { opacity:0; }
+    75% { opacity:0.5; }
+    100% { opacity:1; }
 }
 
 #content { 
@@ -331,6 +362,7 @@ ul.games.disabled {
         border-bottom: 1px solid #8c8c8c;
         margin:0;
         float:left;
+        word-wrap:break-word;
     }
 
     #guests {
