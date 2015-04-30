@@ -41,7 +41,7 @@ var Chat = (function(socket) {
         delete obj.action;
         switch (action) {
             case 'disconnect':
-                console.log('aaaaa');
+                //console.log('aaaaa');
                 disconnect();
             break;
             case 'join' :
